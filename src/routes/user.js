@@ -6,7 +6,7 @@ const path = require("path")
 
 const userController = require(path.join(__dirname, "..", "controllers", "user.js"))
 
-router.get("/users", userController.GET)
-router.post("/users", userController.POST)
+router.get("/register", userController.GET)
+router.post("/register", userController.POST)
 
 module.exports = router;
