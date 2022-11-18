@@ -17,9 +17,11 @@ app.get("/", (req, res) => {
   });
 
 const registerRouter = require(path.join(__dirname, "routes", "user.js"))
+const loginRouter = require(path.join(__dirname, "routes", "login.js"))
 
 
 app.use(registerRouter)
+app.use(loginRouter)
 
 
 
